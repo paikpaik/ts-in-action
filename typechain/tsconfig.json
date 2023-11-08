@@ -1,0 +1,13 @@
+{
+  "include": ["src"], // 어디에 ts파일이 위치하는지 배열안에는 js로 컴파일하고 싶은 모든 디렉터리를 넣으면 됨.
+  "compilerOptions": {
+    // outDir은 js파일이 생성될 디렉터리를 build는 디렉터리명을 뜻함.
+    "outDir": "build",
+    // target은 어떤 버전의 js로 너가 ts를 컴파일하고 싶은지를 의미함.
+    "target": "ES6",
+    // lib은 js의 어떤 버전이  그 환경에서 사용되는지를 의미함.
+    "lib": ["ES6", "DOM"],
+    "strict": true,
+    "allowJs": true
+  }
+}
